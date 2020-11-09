@@ -1,0 +1,10 @@
+.card {
+    margin-left: 8%;
+    margin-top: 10%;
+    display: inline-block;
+    margin-bottom: 20px;
+}
+
+h6 {
+    display: inline-block;
+}
