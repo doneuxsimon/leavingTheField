@@ -1,10 +1,26 @@
-.card {
-    margin-left: 8%;
-    margin-top: 10%;
-    display: inline-block;
-    margin-bottom: 20px;
-}
-
 h6 {
     display: inline-block;
+}
+
+@media (min-width: 1200px) {
+    .conteneur1 {
+        max-width: 95%;
+        padding-left: 5%;
+    }
+}
+
+.col-sm {
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+.imagetitre {
+    margin-right: 4%;
+    margin-top: 4%;
+    max-width: 100px;
+    max-height: 100px;
+}
+
+.flex {
+    display: flex;
 }
