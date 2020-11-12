@@ -143,8 +143,9 @@ for (let element of collection) {
     const title = document.createElement('h4');
     title.textContent = element.title;
 
-    // const categories = document.createElement('h6');
-    // categories.className = ''
+    const categories = document.createElement('h6');
+    categories.textContent = element.categories.titre;
+    categories.className = element.categories.classe;
 
     const paragraph = document.createElement('p');
     paragraph.textContent = element.description;
@@ -185,6 +186,7 @@ for (let element of collection) {
     newDiv.appendChild(image);
     newDiv.appendChild(divCardBody);
     divCardBody.appendChild(title);
+    divCardBody.appendChild(categories);
     divCardBody.appendChild(paragraph);
     divCardBody.appendChild(dev);
     divCardBody.appendChild(lien1);
