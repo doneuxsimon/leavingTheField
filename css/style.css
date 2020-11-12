@@ -21,6 +21,14 @@ h6 {
     height: 100px;
 }
 
+.card {
+    width: 18rem;
+}
+
 .flex {
     display: flex;
+}
+
+.card-link {
+    margin-right: 25px;
 }
