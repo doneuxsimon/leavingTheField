@@ -226,9 +226,13 @@ function filtreJeux(pattern) {
     const resultsDiv = document.querySelector('#results');
     resultsDiv.innerHTML = '';
 
+    const rangée = document.createElement('div');
+    rangée.className = 'row';
+    resultsDiv.appendChild(rangée);
+
     for (let element of results) {
         const colonne = document.createElement('div');
-        colonne.className = 'col-md-6 col-xs col-lg-3 d-flex';
+        colonne.className = 'col colonness d-flex';
 
         const newDiv = document.createElement('div');
         newDiv.className = 'card';
@@ -243,7 +247,6 @@ function filtreJeux(pattern) {
 
         const title = document.createElement('h4');
         title.textContent = element.title;
-
 
         for (let pill of element.category) {
             const categories = document.createElement('span');
@@ -288,7 +291,6 @@ function filtreJeux(pattern) {
             lien2.style.color = 'lightgreen';
         }
 
-
         colonne.appendChild(newDiv);
         newDiv.appendChild(image);
         newDiv.appendChild(divCardBody);
@@ -298,13 +300,11 @@ function filtreJeux(pattern) {
         divCardBody.appendChild(lien1);
         divCardBody.appendChild(imageLien2);
         divCardBody.appendChild(lien2);
-
-
-        resultsDiv.appendChild(colonne);
+        rangée.appendChild(colonne);
     }
 }
 
 const value = document.querySelector('#filter-input')
-    value.addEventListener('change', input => {
-        filtreJeux(input.target.value)
-    })
+value.addEventListener('change', input => {
+    filtreJeux(input.target.value)
+})
