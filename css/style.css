@@ -32,3 +32,15 @@ h6 {
 .card-link {
     margin-right: 25px;
 }
+
+.card {
+    margin-bottom: 8%;
+}
+
+.badge {
+    margin-left: 5px;
+}
+
+#filter-input {
+    margin-left: 40%;
+}
