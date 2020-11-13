@@ -214,18 +214,17 @@ for (let element of collection) {
 
 
 
-function filterSeries(pattern) {
+function filtreJeux(pattern) {
     mainContainer.innerHTML = '';
+    const results = [];
 
-    const results = []
-
-    for (let element of collection) {
-        if (element.title.match(pattern) || element.description.match(pattern))
-            results.push(element);
+    for (let serie of collection) {
+        if (serie.title.match(pattern) || serie.description.match(pattern))
+            results.push(serie);
     }
 
     const resultsDiv = document.querySelector('#results');
-    resultsDiv.innerHTML = ''
+    resultsDiv.innerHTML = '';
 
     for (let element of results) {
         const colonne = document.createElement('div');
@@ -305,6 +304,7 @@ function filterSeries(pattern) {
     }
 }
 
-document.querySelector('#filter_input').addEventListener('change', input => {
-        filterSeries(input.target.value);
-    })  
+const value = document.querySelector('#filter-input')
+    value.addEventListener('change', input => {
+        filtreJeux(input.target.value)
+    })
