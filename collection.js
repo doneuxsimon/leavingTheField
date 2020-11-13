@@ -219,7 +219,7 @@ function filtreJeux(pattern) {
     const results = [];
 
     for (let serie of collection) {
-        if (serie.title.match(pattern) || serie.description.match(pattern))
+        if (serie.title.toLowerCase().match(pattern) || serie.description.toLowerCase().match(pattern))
             results.push(serie);
     }
 
@@ -227,7 +227,7 @@ function filtreJeux(pattern) {
     resultsDiv.innerHTML = '';
 
     const rangée = document.createElement('div');
-    rangée.className = 'row';
+    rangée.className = 'row rangee';
     resultsDiv.appendChild(rangée);
 
     for (let element of results) {
@@ -305,6 +305,6 @@ function filtreJeux(pattern) {
 }
 
 const value = document.querySelector('#filter-input')
-value.addEventListener('change', input => {
-    filtreJeux(input.target.value)
+value.addEventListener('keyup', input => {
+    filtreJeux(input.target.value.toLowerCase())
 })

@@ -48,3 +48,9 @@ h6 {
 .colonness {
     justify-content: center;
 }
+
+.rangee {
+    margin-left: 10%;
+    max-width: 80%;
+    justify-self: center;
+}
