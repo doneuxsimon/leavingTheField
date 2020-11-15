@@ -30,15 +30,7 @@ const categorie = [{
 
 
 
-const collection = [{
-        title: 'World of warcraft',
-        image: './photos/worldOfWarcraft.jpg',
-        developper: 'Blizzard Entertainment',
-        category: [categorie[1], categorie[3]],
-        links: ['https://youtu.be/s4gBChg6AII', 'https://worldofwarcraft.com/fr-fr/'],
-        linksImg: './photos/icons8-world-of-warcraft-16.png',
-        description: 'Jeu de quête en ligne.'
-    },
+const collection = [
     {
         title: 'Apex legends',
         image: './photos/apexLegends.jpg',
@@ -58,42 +50,6 @@ const collection = [{
         description: 'Infinity Ward'
     },
     {
-        title: 'Dota 2',
-        image: './photos/dota2.jpg',
-        developper: 'Icefrog',
-        category: [categorie[0], categorie[1]],
-        links: ['https://youtu.be/pnbWipZJq_k', 'https://fr.dota2.com/'],
-        linksImg: './photos/icons8-dota-2-16.png',
-        description: 'Jeu MOBA comme league of legends mais en moins bien.'
-    },
-    {
-        title: 'Fifa 2020',
-        image: './photos/fifa2020.jpg',
-        developper: 'Frostbite Engine',
-        category: [categorie[1], categorie[2], categorie[4]],
-        links: ['https://www.ea.com/fr-fr/games/fifa/fifa-20', 'https://youtu.be/9E4HMgh7ZsE'],
-        linksImg: './photos/icons8-soccer-ball-16.png',
-        description: 'Jeu de football , avec mode histoire et multijoueur'
-    },
-    {
-        title: 'League of legends',
-        image: './photos/leagueOfLegends.jpg',
-        developper: 'Riot games',
-        category: [categorie[0], categorie[1]],
-        links: ['https://youtu.be/7O21Z6vgtmY', 'https://play.euw.leagueoflegends.com/fr_FR'],
-        linksImg: './photos/icons8-league-of-legends-16.png',
-        description: 'Jeu MOBA très bien développé, avec beaucoup de possibilités.'
-    },
-    {
-        title: 'Final fantasy 14',
-        image: './photos/finalFantasy.jpg',
-        developper: 'Akihiko Yoshida',
-        category: [categorie[1], categorie[3]],
-        links: ['https://youtu.be/4tyuIh12_HU', 'https://www.finalfantasyxiv.com/'],
-        linksImg: './photos/icons8-final-fantasy-xiv-16.png',
-        description: 'Jeu de rôle en ligne massivement multijoueur façon fantaisie avec accomplissement de quête.'
-    },
-    {
         title: 'Counter strike : GO',
         image: './photos/counterStrikeGO.jpg',
         developper: 'Minh Le',
@@ -101,24 +57,6 @@ const collection = [{
         links: ['https://youtu.be/edYCtaNueQY', 'https://store.steampowered.com/app/730/CounterStrike_Global_Offensive/'],
         linksImg: './photos/icons8-counter-strike-16.png',
         description: 'Jeu de tir à la première personne multijoueur en ligne basé sur le jeu déquipe.'
-    },
-    {
-        title: 'Rocket league',
-        image: './photos/rocketLeague.jpg',
-        developper: 'Corey Davis',
-        category: [categorie[1], categorie[2], categorie[4]],
-        links: ['https://youtu.be/OmMF9EDbmQQ', 'https://www.rocketleague.com/fr/'],
-        linksImg: './photos/icons8-rocket-league-16.png',
-        description: 'Jeu de foot avec des voitures en mode campagne ou multijouer.'
-    },
-    {
-        title: 'Fortnite',
-        image: './photos/fortnite.jpg',
-        developper: 'Epic Games',
-        category: [categorie[1], categorie[6]],
-        links: ['https://youtu.be/3KgmY5NrEzU', 'https://www.epicgames.com/fortnite/fr/home'],
-        linksImg: './photos/icons8-fortnite-16.png',
-        description: 'Jeu de Battle Royale.'
     }
 ];
 
